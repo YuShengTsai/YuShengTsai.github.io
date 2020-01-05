@@ -1,21 +1,47 @@
 body{
   padding: 50px;
-  //display: flex;
   justify-content: center;
   background-color: rgba(255,255,255,0.95);
   color: black;
   font-size: 15px;
   line-height: 28px;
   letter-spacing: 1px;
+}
+h1, h2, h3, h4, a
+{
   font-family: "微軟正黑體",sans-serif;
+  font-weight: normal;
+  margin:0px;
+}
+h1
+{
+  font-size: 225%;
+  font-weight: bold;
+}
+h2
+{
+  font-size:200%;
+  font-weight: bold;
+  letter-spacing: 0.2em;
+}
+h3
+{
+  font-size: 125%;
+  font-weight: bold;
+}
+h4
+{
+  font-size: 90%;
+  margin-bottom: 5px;
 }
 p
 {
-	display: block;
+  display: block;
     margin-block-start: 1em;
     margin-block-end: 1em;
     margin-inline-start: 0px;
     margin-inline-end: 0px;
+    font-family: "微軟正黑體",sans-serif;
 }
 ul{
   padding: 0;
@@ -23,36 +49,51 @@ ul{
 }
 li
 {
-	position: relative;
+  position: relative;
 }
 li:before,li:after
 {
-	content: " ";
+  content: " ";
     display: table;
 }
 li:after
 {
-	clear: both;
+  clear: both;
 }
 div
 {
-	display: block;
-	box-sizing: border-box;
+  display: block;
+  box-sizing: border-box;
+}
+}
+.listTime
+{
+   margin:0px;
+}
+.listTitle
+{
+  float: left;
+  word-spacing: 1em;
+  margin-right: 10px;
+}
+.listExperience
+{
+  clear: both;
 }
 .listBar
 {
-	float: left;
-	position: static;
-	min-height: 30px;
-	text-align: center;
-	padding-left: 15px;
+  float: left;
+  position: static;
+  min-height: 30px;
+  text-align: center;
+  padding-left: 15px;
     padding-right: 15px;
     width: 8.33333333%;
 }
 .listBar:before
 {
-	content: '';
-	width: 9px;
+  content: '';
+  width: 9px;
     height: 9px;
     border-radius: 50%;
     text-align: center;
@@ -67,7 +108,7 @@ div
 }
 .listBar:after
 {
-	content: '';
+  content: '';
     width: 1px;
     height: 100%;
     background-color: #979797;
@@ -81,11 +122,15 @@ div
 }
 .contentExperience
 {
-	float: left;
-	position: relative;
+  float: left;
+  position: relative;
     min-height: 1px;
     padding-left: 15px;
     padding-right: 15px;
     margin-bottom: 18px;
     width: 66.66666667%;
+}
+.itemExperience:last-child :after {
+    opacity: 0;
+    top: 0;
 }
